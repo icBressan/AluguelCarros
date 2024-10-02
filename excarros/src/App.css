@@ -1,38 +1,53 @@
-.App {
+/* Estilo geral da tabela e do layout */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+th {
+  color: rgb(0, 0, 0);
+}
+
+h1 {
   text-align: center;
+  color: rgb(166, 164, 184);
+  background-color: #2e00d4bd; /* Cor sólida no fundo */
+  padding: 20px 0; /* Espaçamento interno superior e inferior */
+  margin: 0; /* Remove o espaçamento padrão ao redor do h1 */
+  width: 100vw; /* Faz o h1 ocupar 100% da largura da janela */
+  box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h3 {
+  text-align: center;
+  color: rgb(17, 0, 94);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table {
+  margin: auto;
+  box-shadow: 0 0 10px rgba(78, 78, 78, 0.466);  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container para alinhar as tabelas lado a lado */
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Formulário e resultado */
+form, .resultado {
+  margin: auto;
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0, 4, 255);  
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formulario {
+  text-align: center;
+  margin-top: 20px;
 }
